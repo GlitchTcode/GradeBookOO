@@ -56,7 +56,7 @@ namespace GradeBookOO
         }
         public void HighestGrade()
         {
-
+            //Experimenting with lamdas
             var maxValueKey = grades.Aggregate((x, y) => x.Value > y.Value ? x : y).Key;
             var maxValue = grades.Aggregate((x, y) => x.Value > y.Value ? x : y).Value;
             Console.WriteLine("The highest grade for " + this.name + " is: ");
